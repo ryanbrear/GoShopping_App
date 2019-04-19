@@ -8,20 +8,66 @@
 
 /* Begin PBXBuildFile section */
 		B628E9DD22674EEA0070E044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B628E9DC22674EEA0070E044 /* AppDelegate.swift */; };
-		B628E9DF22674EEA0070E044 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B628E9DE22674EEA0070E044 /* ViewController.swift */; };
+		B628E9DF22674EEA0070E044 /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B628E9DE22674EEA0070E044 /* CitiesViewController.swift */; };
 		B628E9E222674EEA0070E044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B628E9E022674EEA0070E044 /* Main.storyboard */; };
 		B628E9E422674EEB0070E044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B628E9E322674EEB0070E044 /* Assets.xcassets */; };
 		B628E9E722674EEB0070E044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B628E9E522674EEB0070E044 /* LaunchScreen.storyboard */; };
+		B628E9F422674F380070E044 /* GoShoppingSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B628E9F322674F1F0070E044 /* GoShoppingSwift.framework */; };
+		B628E9F522674F380070E044 /* GoShoppingSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B628E9F322674F1F0070E044 /* GoShoppingSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B628E9FB22674FD20070E044 /* MallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B628E9FA22674FD20070E044 /* MallsViewController.swift */; };
+		B628E9FD22674FE20070E044 /* ShopsInMallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B628E9FC22674FE20070E044 /* ShopsInMallViewController.swift */; };
+		B628E9FF226755BD0070E044 /* PlacesToShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B628E9FE226755BD0070E044 /* PlacesToShop.swift */; };
+		B628EA0122675B5C0070E044 /* AllShopsInCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B628EA0022675B5C0070E044 /* AllShopsInCityViewController.swift */; };
+		B628EA192269F0E40070E044 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B628EA182269F0E40070E044 /* AlertManager.swift */; };
+		B628EA1B226A07230070E044 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B628EA1A226A07230070E044 /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B628E9F222674F1F0070E044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B628E9EE22674F1F0070E044 /* GoShoppingSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B628E9C522674EAD0070E044;
+			remoteInfo = GoShoppingSwift;
+		};
+		B628E9F622674F380070E044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B628E9EE22674F1F0070E044 /* GoShoppingSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B628E9C422674EAD0070E044;
+			remoteInfo = GoShoppingSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B628E9F822674F380070E044 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B628E9F522674F380070E044 /* GoShoppingSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B628E9D922674EEA0070E044 /* GoShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B628E9DC22674EEA0070E044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B628E9DE22674EEA0070E044 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B628E9DE22674EEA0070E044 /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
 		B628E9E122674EEA0070E044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B628E9E322674EEB0070E044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B628E9E622674EEB0070E044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B628E9E822674EEB0070E044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B628E9EE22674F1F0070E044 /* GoShoppingSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GoShoppingSwift.xcodeproj; path = ../GoShoppingSwift/GoShoppingSwift.xcodeproj; sourceTree = "<group>"; };
+		B628E9FA22674FD20070E044 /* MallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MallsViewController.swift; sourceTree = "<group>"; };
+		B628E9FC22674FE20070E044 /* ShopsInMallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsInMallViewController.swift; sourceTree = "<group>"; };
+		B628E9FE226755BD0070E044 /* PlacesToShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesToShop.swift; sourceTree = "<group>"; };
+		B628EA0022675B5C0070E044 /* AllShopsInCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllShopsInCityViewController.swift; sourceTree = "<group>"; };
+		B628EA182269F0E40070E044 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		B628EA1A226A07230070E044 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B628E9F422674F380070E044 /* GoShoppingSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +85,7 @@
 		B628E9D022674EEA0070E044 = {
 			isa = PBXGroup;
 			children = (
+				B628E9EE22674F1F0070E044 /* GoShoppingSwift.xcodeproj */,
 				B628E9DB22674EEA0070E044 /* GoShopping */,
 				B628E9DA22674EEA0070E044 /* Products */,
 			);
@@ -54,14 +102,44 @@
 		B628E9DB22674EEA0070E044 /* GoShopping */ = {
 			isa = PBXGroup;
 			children = (
+				B628EA172269F0DA0070E044 /* Managers */,
+				B628E9F922674F870070E044 /* Views */,
 				B628E9DC22674EEA0070E044 /* AppDelegate.swift */,
-				B628E9DE22674EEA0070E044 /* ViewController.swift */,
 				B628E9E022674EEA0070E044 /* Main.storyboard */,
 				B628E9E322674EEB0070E044 /* Assets.xcassets */,
 				B628E9E522674EEB0070E044 /* LaunchScreen.storyboard */,
 				B628E9E822674EEB0070E044 /* Info.plist */,
 			);
 			path = GoShopping;
+			sourceTree = "<group>";
+		};
+		B628E9EF22674F1F0070E044 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B628E9F322674F1F0070E044 /* GoShoppingSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B628E9F922674F870070E044 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B628E9DE22674EEA0070E044 /* CitiesViewController.swift */,
+				B628E9FE226755BD0070E044 /* PlacesToShop.swift */,
+				B628E9FA22674FD20070E044 /* MallsViewController.swift */,
+				B628E9FC22674FE20070E044 /* ShopsInMallViewController.swift */,
+				B628EA0022675B5C0070E044 /* AllShopsInCityViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B628EA172269F0DA0070E044 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B628EA182269F0E40070E044 /* AlertManager.swift */,
+				B628EA1A226A07230070E044 /* ActivityIndicator.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,10 +152,12 @@
 				B628E9D522674EEA0070E044 /* Sources */,
 				B628E9D622674EEA0070E044 /* Frameworks */,
 				B628E9D722674EEA0070E044 /* Resources */,
+				B628E9F822674F380070E044 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B628E9F722674F380070E044 /* PBXTargetDependency */,
 			);
 			name = GoShopping;
 			productName = GoShopping;
@@ -110,12 +190,28 @@
 			mainGroup = B628E9D022674EEA0070E044;
 			productRefGroup = B628E9DA22674EEA0070E044 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B628E9EF22674F1F0070E044 /* Products */;
+					ProjectRef = B628E9EE22674F1F0070E044 /* GoShoppingSwift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B628E9D822674EEA0070E044 /* GoShopping */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B628E9F322674F1F0070E044 /* GoShoppingSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GoShoppingSwift.framework;
+			remoteRef = B628E9F222674F1F0070E044 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B628E9D722674EEA0070E044 /* Resources */ = {
@@ -135,12 +231,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B628E9DF22674EEA0070E044 /* ViewController.swift in Sources */,
+				B628E9FD22674FE20070E044 /* ShopsInMallViewController.swift in Sources */,
+				B628E9DF22674EEA0070E044 /* CitiesViewController.swift in Sources */,
 				B628E9DD22674EEA0070E044 /* AppDelegate.swift in Sources */,
+				B628EA0122675B5C0070E044 /* AllShopsInCityViewController.swift in Sources */,
+				B628EA1B226A07230070E044 /* ActivityIndicator.swift in Sources */,
+				B628E9FB22674FD20070E044 /* MallsViewController.swift in Sources */,
+				B628EA192269F0E40070E044 /* AlertManager.swift in Sources */,
+				B628E9FF226755BD0070E044 /* PlacesToShop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B628E9F722674F380070E044 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoShoppingSwift;
+			targetProxy = B628E9F622674F380070E044 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B628E9E022674EEA0070E044 /* Main.storyboard */ = {
@@ -292,7 +402,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = indiegro.GoShopping;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +420,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = indiegro.GoShopping;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
