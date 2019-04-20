@@ -4,4 +4,4 @@ A demo app built to show how the GoShoppingSwift library could be implemented in
 Feel free to download and test it.
 
 The GoShoppingSwift library can be found here: 
-https://github.com/ryanbrear/GoShoppingSwift
+https://github.com/ryanbrear/GoShoppingSwiftLibrary
