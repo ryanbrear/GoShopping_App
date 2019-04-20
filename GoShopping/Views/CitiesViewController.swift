@@ -60,7 +60,7 @@ class CitiesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     
-    /// Method gets the latest data from the API and then updates the view
+    /// Method gets the latest data from the API and then updates the view.
     func getLatestDataAndRefreshView() {
         // turn activity indicator on
         activityIndicator.toggleFor(self, isOn: true)
