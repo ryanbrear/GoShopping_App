@@ -19,7 +19,7 @@ class AllShopsInCityViewController: UIViewController, UITableViewDelegate, UITab
         super.viewDidLoad()
         // remove blank rows from tableview
         tableView.tableFooterView = UIView(frame: CGRect.zero)
-        viewData = GoShoppingDataManager().allShopsIn(selectedCity)
+        viewData = selectedCity.allShopsInCity()
     }
     
 

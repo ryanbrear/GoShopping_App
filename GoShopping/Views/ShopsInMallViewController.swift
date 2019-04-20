@@ -19,7 +19,7 @@ class ShopsInMallViewController: UIViewController, UITableViewDelegate, UITableV
         super.viewDidLoad()
         // remove blank rows from tableview
         tableView.tableFooterView = UIView(frame: CGRect.zero)
-        viewData = GoShoppingDataManager().allShopsIn(selectedMall)
+        viewData = selectedMall.allShopsInMall()
         self.navigationItem.title = selectedMall.name
     }
     

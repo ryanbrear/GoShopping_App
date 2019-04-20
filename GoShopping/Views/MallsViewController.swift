@@ -19,7 +19,7 @@ class MallsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         // remove blank rows from tableview
         tableView.tableFooterView = UIView(frame: CGRect.zero)
-        viewData = GoShoppingDataManager().allMallsIn(selectedCity)
+        viewData = selectedCity.allMallsInCity()
     }
     
     
