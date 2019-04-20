@@ -60,25 +60,38 @@ class CitiesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     
+    /// Method gets the latest data from the API and then updates the view
     func getLatestDataAndRefreshView() {
         // turn activity indicator on
         activityIndicator.toggleFor(self, isOn: true)
-        goShoppingDataManager.getLatestData { success in
+        goShoppingDataManager.getLatestData { result in
             // turn activity indicator off
             DispatchQueue.main.async {
                 // stop an loading indicators
                 self.activityIndicator.toggleFor(self, isOn: false)
                 self.refreshControl.endRefreshing()
             }
-            if success {
+            switch result {
+                
+            case .success:
                 // update the view model from the data cache
                 self.viewData = self.goShoppingDataManager.allCities()
                 DispatchQueue.main.async {
                     self.refreshView()
                 }
-            } else {
+            case .error:
                 DispatchQueue.main.async {
-                    AlertManager().showAlertWithOneAction(view: self, title: "Something went wrong", message: nil, firstActionTitle: "Ok", firstActionCompletion: nil)
+                    AlertManager().showAlertWithOneAction(view: self, title: "Something went wrong", message: nil, firstActionTitle: "Ok", firstActionCompletion: { action in
+                        DispatchQueue.main.async {
+                            self.refreshView()
+                        }
+                    })
+                }
+            case .noInternet:
+                let _ = self.goShoppingDataManager.getLastSavedDataForOfflineUse()
+                self.viewData = self.goShoppingDataManager.allCities()
+                DispatchQueue.main.async {
+                    self.refreshView()
                 }
             }
         }
